@@ -90,6 +90,7 @@ func (c *Context) GetAPI() (coreiface.CoreAPI, error) {
 			fetchBlocks = !cfg.Gateway.NoFetch
 		}
 
+		// NewCoreAPI creates new instance of IPFS CoreAPI backed by go-ipfs Node. (core/coreapi/coreapi.go)
 		c.api, err = coreapi.NewCoreAPI(n, options.Api.FetchBlocks(fetchBlocks))
 		if err != nil {
 			return nil, err

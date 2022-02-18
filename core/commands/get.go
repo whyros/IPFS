@@ -79,14 +79,15 @@ may also specify the level of compression by specifying '-l=<1-9>'.
 		}
 
 		// req contient les information de la requête effectué
-		// GetApi permet d'avoir l'outil réalisant le requête de recevoir ou écrire des fichiers
+		// GetApi permet d'avoir l'outil réalisant le requête de recevoir ou écrire des fichiers (core/commands/cmdenv/env.go)
 		api, err := cmdenv.GetApi(env, req)
 		if err != nil {
 			return err
 		}
 
-		// Create the path from the first argument
+		// Create the path from the first argument req.Arguments[0]=CID
 		p := path.New(req.Arguments[0])
+		// p = /ipfs/CID
 
 		file, err := api.Unixfs().Get(req.Context, p)
 		if err != nil {

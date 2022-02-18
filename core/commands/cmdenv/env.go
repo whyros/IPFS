@@ -43,6 +43,7 @@ func GetApi(env cmds.Environment, req *cmds.Request) (coreiface.CoreAPI, error) 
 		}
 	}
 	
+	// Extrait L'API du noeud (command/context.go)
 	api, err := ctx.GetAPI()
 	if err != nil {
 		return nil, err
