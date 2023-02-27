@@ -89,7 +89,7 @@ require (
 	github.com/libp2p/go-socket-activation v0.1.0
 	github.com/libp2p/go-tcp-transport v0.4.0
 	github.com/libp2p/go-ws-transport v0.5.0
-	github.com/miekg/dns v1.1.43
+	github.com/miekg/dns v1.1.51
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/multiformats/go-multiaddr v0.4.1
 	github.com/multiformats/go-multiaddr-dns v0.3.1
@@ -107,8 +107,8 @@ require (
 	go.uber.org/fx v1.15.0
 	go.uber.org/zap v1.19.1
 	golang.org/x/crypto v0.0.0-20210921155107-089bfa567519
-	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
-	golang.org/x/sys v0.0.0-20211025112917-711f33c9992c
+	golang.org/x/sync v0.1.0
+	golang.org/x/sys v0.2.0
 )
 
 go 1.16
